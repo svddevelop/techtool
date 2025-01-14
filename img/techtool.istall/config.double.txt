@@ -1,0 +1,21 @@
+# 
+# MCP INT --> RPi 22 (GPIO 25); MCP SI --> RPi 19 (GPIO 10); MCP SO --> RPi 21 (GPIO 9)
+# MCP SCK --> RPi 23 (GPIO 11); MCP CS --> RPi 24 (GPIO 8)
+#
+
+dtparam=spi=on
+dtoverlay=mcp2515-can0,oscillator=8000000,interrupt=25
+
+#
+# MCP INT --> RPi 37 (GPIO 26); MCP SI --> RPi 38 (GPIO ); MCP SO --> RPi 35 (GPIO )
+# MCP SCK --> RPi 40 (GPIO ); MCP CS --> RPi 36 (GPIO 16)
+#
+# https://github.com/terilenard/mcp2515-tja1050-wiring
+dtoverlay=spi1-1cs,cs0_pin=16,cs0_spidev=off
+dtoverlay=mcp2515-can2,oscillator=8000000,interrupt=26
+
+#
+dtoverlay=spi-bcm2835-overlay
+
+dtoverlay=dwc2
+
