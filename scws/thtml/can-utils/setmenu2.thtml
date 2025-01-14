@@ -1,0 +1,6 @@
+<bory>
+  <script>
+    window.parent.requestServer('/menu?clear&caption1=down CAN0&cmd1=/shell?cmd=down_can0.sh&caption2=up CAN0&cmd2=/shell?cmd=up_can0.sh&caption3=candump CAN0&cmd3=/shell?cmd=candump_can0.sh&caption4=Back&cmd4=/default');
+    window.parent.loadMenu();
+  </script>
+</body>
