@@ -21,8 +21,10 @@ After=network.target
 ExecStart=sudo $APP_PATH
 ExecStop=curl -s -X POST \"http://127.0.0.1/stop\"
 Restart=on-failure
-User=$USER_NAME
-Group=$GROUP_NAME
+User=
+#User=$USER_NAME
+Group=
+#Group=$GROUP_NAME
 
 [Install]
 WantedBy=multi-user.target" | sudo tee "$SERVICE_FILE" > /dev/null
