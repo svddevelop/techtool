@@ -3,7 +3,7 @@
 ---
 
 ### Image
-Image basierend auf RASPBIAN OS
+Image basierend auf RASPBIAN OS (Debian 12)
 
 
 `Linux techtool 6.6.69-v8+ #1835 SMP PREEMPT Thu Jan  2 11:27:29 GMT 2025 aarch64 GNU/Linux`
